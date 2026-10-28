@@ -1,0 +1,19 @@
+services:
+  vault:
+    build: .
+    image: vault-bank-infoeste
+    container_name: vault-bank
+    environment:
+      VAULT_SECURITY_MODE: vulnerable
+    ports:
+      - "127.0.0.1:8099:8099"   # SO loopback - nunca exponha na internet
+    volumes:
+      - vault-data:/data
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    restart: unless-stopped
+volumes:
+  vault-data:

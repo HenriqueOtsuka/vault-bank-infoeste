@@ -1,0 +1,5 @@
+# Overlay do MODO SEGURO: docker compose -f compose.yaml -f compose.secure.yaml up -d --build --force-recreate
+services:
+  vault:
+    environment:
+      VAULT_SECURITY_MODE: secure

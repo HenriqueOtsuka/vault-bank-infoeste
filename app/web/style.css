@@ -1,0 +1,29 @@
+:root{--bg:#060B13;--panel:#101B2A;--card:#263648;--line:#294057;--txt:#F0F6FB;--mut:#9BA9BA;--green:#B9FF3B;--cyan:#36E7E7;--pink:#FF5A90}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font-family:Inter,system-ui,Arial,sans-serif}
+header{display:flex;align-items:center;gap:24px;padding:14px 22px;border-bottom:1px solid var(--line);background:#0A1420}
+.brand{font-weight:800;font-size:20px;letter-spacing:1px;color:var(--cyan)}
+.brand span{color:var(--mut);font-weight:400;font-size:12px;margin-left:8px}
+nav{display:flex;gap:6px;flex-wrap:wrap}
+nav a{color:var(--mut);text-decoration:none;padding:6px 12px;border-radius:8px;font-size:14px}
+nav a:hover,nav a.active{background:var(--card);color:var(--txt)}
+.who{margin-left:auto;color:var(--mut);font-size:13px}
+main{max-width:880px;margin:26px auto;padding:0 18px}
+h1{font-size:24px;margin:0 0 6px}
+.sub{color:var(--mut);margin:0 0 18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px;margin:14px 0}
+label{display:block;color:var(--mut);font-size:13px;margin:10px 0 4px}
+input,textarea{width:100%;background:#0A1420;border:1px solid var(--line);border-radius:8px;color:var(--txt);padding:10px;font-size:14px;font-family:inherit}
+button{background:var(--green);color:#06210a;border:0;border-radius:8px;padding:10px 16px;font-weight:700;cursor:pointer;margin-top:12px}
+button.alt{background:var(--card);color:var(--txt)}
+pre{background:#0A1420;border:1px solid var(--line);border-radius:8px;padding:12px;overflow:auto;font-size:13px;color:var(--cyan)}
+.row{display:flex;gap:10px;align-items:flex-end}
+.row input{flex:1}
+.note{border-bottom:1px solid var(--line);padding:10px 0}
+.note b{color:var(--cyan)}
+.flag{color:var(--green);font-weight:700}
+.sb{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.sb .pill{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:13px}
+.sb .pill.ok{border-color:var(--green);color:var(--green)}
+.muted{color:var(--mut);font-size:13px}
+.warn{position:fixed;bottom:0;left:0;right:0;background:#2a0d16;color:var(--pink);text-align:center;font-size:12px;padding:5px;border-top:1px solid #50202f}
